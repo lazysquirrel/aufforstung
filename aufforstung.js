@@ -18,12 +18,12 @@ var treeDefinition = function(radius, type, color) {
 
 var treeTypeList = [];
 
-treeTypeList[0] = {radius:30, type:"Eiche", color:"#00aaaa"};
-treeTypeList[1] = {radius:25, type:"Buche", color:"#bbccbb"};
-treeTypeList[2] = {radius:45, type:"Birke", color:"crimson"};
-treeTypeList[3] = {radius:40, type:"Birke", color:"yellow"};
-treeTypeList[4] = {radius:60, type:"Birke", color:"pink"};
-treeTypeList[5] = {radius:20, type:"Birke", color:"crimson"};
+treeTypeList[0] = new treeDefinition(30, "Eiche", "#00aaaa");
+treeTypeList[1] = new treeDefinition(25, "Buche", "#bbccbb");
+treeTypeList[2] = new treeDefinition(45, "Birke", "crimson");
+treeTypeList[3] = new treeDefinition(40, "Birke", "yellow");
+treeTypeList[4] = new treeDefinition(60, "Birke", "pink");
+treeTypeList[5] = new treeDefinition(20, "Birke", "crimson");
 
 
 function drawCircle(x, y, r, color) {
