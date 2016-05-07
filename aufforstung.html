@@ -4,20 +4,22 @@
 		<canvas id="waldflaeche" height="600" width="800">
 			Canvas geht bei dir owhl nicht, pech
 		</canvas>
+		<div class="treeOptions">
+		Tree type 1 radius <input id="tree1radius" type="number" min="20" max="50" value="10"> Color 
+		<input type="color" id="tree1color" value="#17a546"></input>
+		</div>
+		<div class="treeOptions">
+		Tree type 2 radius <input id="tree2radius" type="number" min="20" max="50" value="15"> Color 
+		<input type="color" id="tree2color" value="#0a711c"></input>
+		</div>
+		<div class="treeOptions">
+		Tree Type 3 radius <input id="tree3radius" type="number" min="20" max="50" value="21"> Color 
+		<input type="color" id="tree3color" value="#497f0d"></input>
+		</div>
+		Iterations <input type="number" id="iterationsField" min="1" max="10" value="1"></input>
+		<button id="startButton" onclick="start()" width="100">Start!</button>
+		<div id="results"></div>
 		<script src="aufforstung.js">
 		</script>
-		<button onclick="start()" width="100">Start!</button>
-		<div class="treeOptions">
-		Radius <input id="tree1radius" type="number" min="10" max="100" value="10"> Color 
-		<input type="color" id="tree1color" value="#ff0000"></input>
-		</div>
-		<div class="treeOptions">
-		Radius <input id="tree2radius" type="number" min="10" max="100" value="10"> Color 
-		<input type="color" id="tree2color" value="#aabb00"></input>
-		</div>
-		<div class="treeOptions">
-		Radius <input id="tree3radius" type="number" min="10" max="100" value="10"> Color 
-		<input type="color" id="tree1color" value="#88bbdd"></input>
-		</div>
 	</body>
 </html>
